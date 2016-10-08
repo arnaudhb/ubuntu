@@ -1,23 +1,14 @@
 ## Ubuntu Dockerfile
 
 
-This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/dockerfile/ubuntu/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
+This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for [Docker](https://www.docker.com/)'s [automated build](https://store.docker.com/community/images/arnaudhb/ubuntu)
 
 
 ### Base Docker Image
 
-* [ubuntu:14.04](https://registry.hub.docker.com/u/library/ubuntu/)
-
-
-### Installation
-
-1. Install [Docker](https://www.docker.com/).
-
-2. Download [automated build](https://registry.hub.docker.com/u/dockerfile/ubuntu/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull dockerfile/ubuntu`
-
-   (alternatively, you can build an image from Dockerfile: `docker build -t="dockerfile/ubuntu" github.com/dockerfile/ubuntu`)
+* [ubuntu:16.10] (https://store.docker.com/images/414e13de-f1ba-40d0-9867-08f2e5884b3f)
 
 
 ### Usage
 
-    docker run -it --rm dockerfile/ubuntu
+    docker run -it --rm arnaudhb/ubuntu
