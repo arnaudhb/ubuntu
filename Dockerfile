@@ -22,11 +22,18 @@ ADD root/.bashrc /root/.bashrc
 ADD root/.gitconfig /root/.gitconfig
 ADD root/.scripts /root/.scripts
 
+# Get some useful scripts from Github
+RUN wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -q -O /root/.scripts/git-completion.sh
+RUN wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -q -O /root/.scripts/git-prompt.sh
+RUN wget https://raw.githubusercontent.com/rupa/z/master/z.sh -q -O /root/.scripts/z.sh
+
 # Set environment variables.
 ENV HOME /root
 
 # Define working directory.
 WORKDIR /root
+
+
 
 # Define default command.
 CMD ["bash"]
